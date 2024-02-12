@@ -103,13 +103,13 @@ public class HomePage extends BasePage {
 		
 		Screenshots sc = new Screenshots(driver);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,1000);", "");
+		js.executeScript("window.scrollBy(0,980);", "");
 		sc.ScreenShot("bikes");
 		Thread.sleep(2000);
 		
 	//	Thread.sleep(2000);		
 		viewMoreBikes.click();
-		js.executeScript("window.scrollBy(1000,1150);", "");
+		js.executeScript("window.scrollBy(980,1150);", "");
 		Thread.sleep(3000);
 	}
 	
