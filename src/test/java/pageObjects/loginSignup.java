@@ -3,6 +3,7 @@ package pageObjects;
 import java.io.IOException;
 import java.util.Set;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,6 +40,10 @@ public class loginSignup extends BasePage {
 	@FindBy(xpath="//div[@class='o6cuMc Jj6Lae']")
 	WebElement error_msg;
 	
+	// Login element for highlighting
+	@FindBy(xpath = "//div[@class='d-tblc rel']")
+	WebElement logElement;
+	
 	// Actions
 	
 	Screenshots sc = new Screenshots(driver);
@@ -48,6 +53,7 @@ public class loginSignup extends BasePage {
 	
 		login_btn.click();
 	//	Thread.sleep(2000);
+		highlightElement(logElement);
 		sc.ScreenShot("login");
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;

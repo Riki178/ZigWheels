@@ -25,24 +25,6 @@
     </classes>
   </test> 
   
- <test name="edgetest">
-  
-  <parameter name="browser" value="edge"/>
-  <parameter name="os" value="Windows"/>
 
-  <groups>
-   		<run>
-			<include name="Master" />
-			<!-- <include name="Sanity" /> -->
-			<!--<include name="Regression" />
-			<exclude name="Sanity" />-->
-		</run>
-  </groups>
-	
-    <classes>
-    	
-      <class name="testCases.TC_003_LoginSignUp"/>
-    </classes>
-  </test> 
  
 </suite> 

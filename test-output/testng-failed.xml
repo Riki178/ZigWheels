@@ -13,6 +13,7 @@
       <class name="testCases.TC_003_LoginSignUp">
         <methods>
           <include name="tearDown"/>
+          <include name="upcomingBikes"/>
           <include name="setup"/>
           <include name="usedCars"/>
           <include name="sign"/>
@@ -20,25 +21,4 @@
       </class> <!-- testCases.TC_003_LoginSignUp -->
     </classes>
   </test> <!-- chrometest(failed) -->
-  <test thread-count="5" name="edgetest(failed)">
-    <parameter name="os" value="Windows"/>
-    <parameter name="browser" value="edge"/>
-    <groups>
-      <run>
-        <include name="Master"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="testCases.TC_003_LoginSignUp">
-        <methods>
-          <include name="tearDown"/>
-          <include name="upcomingBikes"/>
-          <include name="setup"/>
-          <include name="verify"/>
-          <include name="sign"/>
-          <include name="usedCars"/>
-        </methods>
-      </class> <!-- testCases.TC_003_LoginSignUp -->
-    </classes>
-  </test> <!-- edgetest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
